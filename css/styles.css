@@ -14,7 +14,12 @@ Bold: 700
  - Line Heights:
  Default: 1
  Paragraph Default: 1.6
+ Medium: 1.2
  small: 1.05
+
+ - Letter Spacing
+ -0.5px
+ 0.75px
 
 
 === 02 COLORS ====
@@ -87,13 +92,33 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.heading-primary {
-  font-size: 5.2rem;
+.heading-primary,
+.heading-secondary {
   font-weight: 700;
-  line-height: 1.05;
   color: #333;
   letter-spacing: -0.05px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
   margin-bottom: 3.2rem;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 .btn:link,
@@ -262,5 +287,8 @@ body {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
+}
+
+.step-img {
+  width: 50%;
 }
