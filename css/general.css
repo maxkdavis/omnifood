@@ -88,6 +88,15 @@ body {
   column-gap: 6.4rem;
 }
 
+/* .grid:last-child {
+  margin-bottom: 0; /*so when a container only has 1 grid container there will be no margin-bottom applied. In the dev tools compare the container from 'how it works' vs. 'pricing'
+}
+  */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem; /*this is say 'a grid container that is not the last child within a parent container will get a margin-bottom' */
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
