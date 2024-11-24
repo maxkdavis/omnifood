@@ -449,3 +449,33 @@
   font-size: 1.8rem;
   line-height: 1.8;
 }
+
+/***********************/
+/* CTA SECTION */
+/***********************/
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  /* gradient */
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  /* temp height */
+  height: 50rem;
+  overflow: hidden;
+}
+
+/* .cta-text-box {
+} */
+
+.cta-img-box {
+  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), hsla(28, 80%, 52%, 0.35)),
+    url('../img/eating.jpg'); /* '..' means to move up one to the parent folder*/
+  background-size: cover;
+  background-position: center;
+}
