@@ -14,8 +14,10 @@ Bold: 700
  - Line Heights:
  Default: 1
  Paragraph Default: 1.6
+ Large: 1.8
  Medium: 1.2
  small: 1.05
+ 
 
  - Letter Spacing
  -0.5px
@@ -246,6 +248,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
