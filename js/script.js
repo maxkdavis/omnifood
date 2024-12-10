@@ -53,3 +53,28 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+///////////////////////////
+//Sticky Navigation
+const sectionHeroEl = document.querySelector('.section-hero');
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === false) {
+      document.body.classList.add('sticky');
+    }
+
+    if (ent.isIntersecting) {
+      document.body.classList.remove('sticky');
+    }
+  },
+  {
+    //In the viewport
+    root: null, //null means viewport
+    threshold: 0, //means this will fire an event as soon as 0% of hero section is inside viewport. So we set this to zero so that event fires once hero section is completely out of the viewport.
+    rootMargin: '-80px', // so we're able to see 'featured-in' section when we first intersect
+  }
+);
+
+obs.observe(sectionHeroEl);
